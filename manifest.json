@@ -1,0 +1,21 @@
+{
+  "name": "soundclouddl",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Chrome extension to download soundcloud songs",
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "contextMenus",
+    "downloads"
+  ],
+  "background": {
+    "scripts": ["js_plugins/jquery.min.js", "background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [  "https://*/*","http://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
