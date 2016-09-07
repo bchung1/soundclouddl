@@ -1,4 +1,4 @@
-var CLIENT_ID = ""
+var CLIENT_ID = "c1d0ed14c9832ceeaa004e4ba650d4f9"
 chrome.contextMenus.create({
   "id": "soundclouddl",
   "title": "Download SoundCloud Song",
